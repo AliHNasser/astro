@@ -1,0 +1,276 @@
+/* Start Current Page */
+header nav .container .links ul li:last-child a::before {
+    opacity: 1;
+}
+/* End Current Page */
+/* Start Landing */
+.landing {
+    height: 100vh;
+    background-image: url(../images/contact-landing-background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.landing .container .text {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: var(--white);
+    padding: var(--main-section-padding) 0;
+}
+.landing .container .text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/* End Landing */
+/* Start Office */
+.office {
+    padding: var(--main-section-padding) 0;
+}
+.office .container .text {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.office .container .text h2 {
+    font-weight: 500;
+    color: var(--main-text-color);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.office .container .text p {
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+.office .container .addresses {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+@media (max-width: 767px) {
+    .office .container .addresses {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+    }
+}
+.office .container .addresses .card {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.office .container .addresses .card i {
+    color: var(--white);
+    background-color: var(--sky-blue);
+    font-size: 25px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+.office .container .addresses .card h3 {
+    flex-basis: 100%;
+    font-weight: 500;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+}
+.office .container .addresses .card address {
+    color: var(--secondary-text-color);
+    font-style: normal;
+    line-height: 1.6;
+}
+.office .container .addresses .card a {
+    flex-basis: 100%;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+.office .container .addresses .card span {
+    flex-basis: 100%;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+/* End Office */
+/* Start Find */
+.find {
+    padding: var(--main-section-padding) 0;
+}
+.find .container .text {
+    text-align: center;
+    margin-bottom: var(--main-section-padding);
+}
+.find .container .text h2 {
+    font-weight: 500;
+    color: var(--main-text-color);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.find .container .text p {
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+/* End Find */
+/* Start Mail Us */
+.mail {
+    padding: var(--main-section-padding) 0;
+}
+.mail .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+.mail .container h2 {
+    grid-area: 1 / 1 / 1 / span 12;
+    font-weight: 500;
+    color: var(--main-text-color);
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.mail .container form {
+    grid-area: 2 / 2 / 2 / span 10;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+@media (max-width: 1199px) {
+    .mail .container form {
+        grid-area: 2 / 1 / 2 / span 12;
+    }
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+    .mail .container form {
+        column-gap: 0;
+        justify-content: space-between;
+    }
+}
+.mail .container form .name {
+    flex-basis: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+@media (max-width: 991px) {
+    .mail .container form .name {
+        flex-basis: 100%;
+    }
+}
+.mail .container form .name label {
+    flex-basis: 100%;
+    position: relative;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+.mail .container form .name label::after {
+    content: "*";
+    margin-left: 5px;
+    color: var(--sky-blue);
+    font-size: 20px;
+}
+.mail .container form .name input {
+    background-color: #eee;
+    border: none;
+    padding: 20px;
+    color: var(--main-text-color);
+    border-radius: 10px;
+    font-size: 18px;
+    flex-basis: 100%;
+}
+.mail .container form .name input:focus {
+    outline: none;
+}
+.mail .container form .name input::placeholder {
+    color: #c3d0d8;
+    font-style: italic;
+}
+.mail .container form .email {
+    flex-basis: 49%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+@media (max-width: 991px) {
+    .mail .container form .email {
+        flex-basis: 100%;
+    }
+}
+.mail .container form .email label {
+    flex-basis: 100%;
+    position: relative;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+.mail .container form .email label::after {
+    content: "*";
+    margin-left: 5px;
+    color: var(--sky-blue);
+    font-size: 20px;
+}
+.mail .container form .email input {
+    background-color: #eee;
+    border: none;
+    padding: 20px;
+    color: var(--main-text-color);
+    border-radius: 10px;
+    font-size: 18px;
+    flex-basis: 100%;
+}
+.mail .container form .email input:focus {
+    outline: none;
+}
+.mail .container form .email input::placeholder {
+    color: #c3d0d8;
+    font-style: italic;
+}
+.mail .container form .message {
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.mail .container form .message label {
+    flex-basis: 100%;
+    position: relative;
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+.mail .container form .message label::after {
+    content: "*";
+    margin-left: 5px;
+    color: var(--sky-blue);
+    font-size: 20px;
+}
+.mail .container form .message textarea {
+    background-color: #eee;
+    border: none;
+    padding: 20px;
+    color: var(--main-text-color);
+    border-radius: 10px;
+    font-size: 18px;
+    flex-basis: 100%;
+    height: 200px;
+}
+.mail .container form .message textarea:focus {
+    outline: none;
+}
+.mail .container form .message textarea::placeholder {
+    color: #c3d0d8;
+    font-style: italic;
+}
+.mail .container form > input[type="submit"] {
+    background-color: var(--sky-blue);
+    border: none;
+    width: fit-content;
+    padding: 15px 40px;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 500;
+    margin: 20px auto 0;
+}
+/* End Mail Us */

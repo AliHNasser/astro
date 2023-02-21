@@ -1,0 +1,388 @@
+/* Start Current Page */
+header nav .container .links ul li:nth-child(2) a::before {
+    opacity: 1;
+}
+/* End Current Page */
+/* Start Landing */
+.landing {
+    background-image: url(../images/services-landing-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.landing .container .text {
+    padding: var(--main-section-padding) 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--main-text-color);
+    width: 100%;
+    background-color: rgb(237 242 246 / 50%);
+}
+.landing .container .text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+/* End Landing */
+/* Start Advertisement-1 */
+.ad-1 {
+    padding: var(--main-section-padding) 0;
+}
+@media (max-width: 767px) {
+    .ad-1 {
+        padding-bottom: 0;
+    }
+}
+.ad-1 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 767px) {
+    .ad-1 .container {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+.ad-1 .container .image {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+}
+.ad-1 .container .text {
+    flex-basis: 50%;
+}
+@media (max-width: 767px) {
+    .ad-1 .container .text {
+        text-align: center;
+    }
+}
+.ad-1 .container .text h2 {
+    color: var(--main-text-color);
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.ad-1 .container .text h2 span {
+    font-weight: bold;
+}
+.ad-1 .container .text p {
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+    .ad-1 .container .text ul {
+        width: fit-content;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+.ad-1 .container .text ul li {
+    color: var(--main-text-color);
+    margin-bottom: 15px;
+    position: relative;
+}
+.ad-1 .container .text ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #45cd23;
+    font-size: 20px;
+}
+.ad-1 .container .text ul li span {
+    font-weight: bold;
+}
+/* End Advertisement-1 */
+/* Start Advertisement-2 */
+.ad-2 {
+    padding: var(--main-section-padding) 0;
+}
+@media (max-width: 767px) {
+    .ad-2 {
+        padding-bottom: 0;
+    }
+}
+.ad-2 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 767px) {
+    .ad-2 .container {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+.ad-2 .container .text {
+    flex-basis: 50%;
+}
+@media (max-width: 767px) {
+    .ad-2 .container .text {
+        text-align: center;
+    }
+}
+.ad-2 .container .text h2 {
+    color: var(--main-text-color);
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.ad-2 .container .text h2 span {
+    font-weight: bold;
+}
+.ad-2 .container .text p {
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+    .ad-2 .container .text ul {
+        width: fit-content;
+        text-align: left;
+        margin: 0 auto;
+    }
+}
+.ad-2 .container .text ul li {
+    color: var(--main-text-color);
+    margin-bottom: 15px;
+    position: relative;
+}
+.ad-2 .container .text ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #45cd23;
+    font-size: 20px;
+}
+.ad-2 .container .text ul li span {
+    font-weight: bold;
+}
+.ad-2 .container .image {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+@media (max-width: 767px) {
+    .ad-2 .container .image {
+        order: -1;
+    }
+}
+.ad-2 .container .image .info-text {
+    position: absolute;
+    width: 320px;
+    background-color: var(--main-text-color);
+    padding: 20px 40px;
+    color: var(--white);
+    border-radius: 10px;
+    top: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+}
+@media (max-width: 767px) {
+    .ad-2 .container .image .info-text {
+        display: none;
+    }
+}
+.ad-2 .container .image .info-text::before {
+    content: "";
+    border-color: var(--main-text-color) transparent transparent;
+    border-width: 15px;
+    border-style: solid;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ad-2 .container .image .info-text ul {
+    list-style: initial;
+    list-style-position: inside;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ad-2 .container .image .info-text ul li {
+    font-weight: 500;
+    flex-basis: 40%;
+    margin-bottom: 10px;
+}
+.ad-2 .container .image .info-text ul li:nth-child(5),
+.ad-2 .container .image .info-text ul li:last-child {
+    margin-bottom: 0;
+}
+/* End Advertisement-2 */
+/* Start Advertisement-3 */
+.ad-3 {
+    padding: var(--main-section-padding) 0;
+}
+@media (max-width: 767px) {
+    .ad-3 {
+        padding-bottom: 0;
+    }
+}
+.ad-3 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .ad-3 .container {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+}
+.ad-3 .container .image {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ad-3 .container .text {
+    flex-basis: 50%;
+}
+@media (max-width: 767px) {
+    .ad-3 .container .text {
+        text-align: center;
+    }
+}
+.ad-3 .container .text h2 {
+    font-weight: 400;
+    color: var(--main-text-color);
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.ad-3 .container .text h2 span {
+    font-weight: bold;
+}
+.ad-3 .container .text p {
+    color: var(--main-text-color);
+    margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+    .ad-3 .container .text ul {
+        text-align: left;
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+.ad-3 .container .text ul li {
+    color: var(--main-text-color);
+    margin-bottom: 15px;
+    position: relative;
+}
+.ad-3 .container .text ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+    color: #45cd23;
+    font-size: 20px;
+}
+.ad-3 .container .text ul li span {
+    font-weight: bold;
+}
+/* End Advertisement-3 */
+/* Start Why Section */
+.why {
+    padding: var(--main-section-padding) 0;
+}
+@media (max-width: 767px) {
+    .why {
+        padding-bottom: 0;
+    }
+}
+.why .container h2 {
+    font-weight: 500;
+    font-size: 35px;
+    color: var(--main-text-color);
+    text-align: center;
+    margin-bottom: 100px;
+}
+.why .container .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .why .container .cards {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+.why .container .cards .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@media (max-width: 767px) {
+    .why .container .cards .card {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .why .container .cards .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        row-gap: 20px;
+    }
+}
+.why .container .cards .card i {
+    padding: 20px;
+    background-color: var(--sky-blue);
+    color: var(--white);
+    font-size: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+@media (max-width: 767px) {
+    .why .container .cards .card i {
+        margin-right: 0;
+    }
+}
+.why .container .cards .card .text h3 {
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--main-text-color);
+    margin-bottom: 15px;
+}
+.why .container .cards .card .text p {
+    color: var(--secondary-text-color);
+}
+/* End Why Section */
+/* Start Custom Plans */
+.custom {
+    padding: var(--main-section-padding) 0;
+}
+.custom .container {
+    text-align: center;
+}
+.custom .container h2 {
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: var(--main-text-color);
+}
+.custom .container p {
+    color: var(--secondary-text-color);
+    margin-bottom: 50px;
+}
+.custom .container a {
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--sky-blue);
+    padding: 15px 50px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+/* End Custom Plans */
