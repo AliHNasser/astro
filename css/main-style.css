@@ -517,7 +517,6 @@ footer .container .blog h4 {
     margin-bottom: 10px;
 }
 footer .container .blog a {
-    color: var(--white);
     text-align: right;
     display: block;
     color: var(--secondary-text-color);

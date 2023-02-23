@@ -22,6 +22,12 @@ header nav .container .links ul li:nth-child(3) a::before {
     background-color: rgb(237 242 246 / 50%);
     padding: var(--main-section-padding) 0;
 }
+@media (max-width: 767px) {
+    .landing .container .text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 .landing .container .text h2 {
     font-size: 40px;
     margin-bottom: 20px;
@@ -64,6 +70,7 @@ header nav .container .links ul li:nth-child(3) a::before {
 }
 .advertisement .container .text h2 span {
     font-weight: bold;
+    text-transform: capitalize;
 }
 .advertisement .container .text p {
     margin-bottom: 30px;
@@ -115,20 +122,18 @@ header nav .container .links ul li:nth-child(3) a::before {
 .we-do .container .cards .card {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 @media (max-width: 767px) {
     .we-do .container .cards .card {
         flex-direction: column;
         row-gap: 20px;
-        align-items: center;
         text-align: center;
     }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
     .we-do .container .cards .card {
         flex-direction: column;
-        align-items: center;
         text-align: center;
         row-gap: 20px;
     }

@@ -22,6 +22,12 @@ header nav .container .links ul li:nth-child(4) a::before {
     background-color: rgb(237 242 246 / 50%);
     padding: var(--main-section-padding) 0;
 }
+@media (max-width: 767px) {
+    .landing .container .text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 .landing .container .text h2 {
     font-size: 40px;
     margin-bottom: 20px;
@@ -550,6 +556,7 @@ header nav .container .links ul li:nth-child(4) a::before {
     border-radius: 10px;
     font-size: 18px;
     height: 200px;
+    resize: none;
 }
 .content .container .left .leave form textarea:focus {
     outline: none;
